@@ -1,0 +1,233 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #087e8b;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffda79;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(0, 60, 70, 0.65),
+                rgba(0, 60, 70, 0.65)
+            ),
+            url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200");
+
+            background-size: cover;
+            background-position: center;
+            min-height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #087e8b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #055c65;
+        }
+
+        section {
+            padding: 40px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #087e8b;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            text-align: center;
+        }
+        .department-container,
+        .doctor-container,
+        .facility-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 22px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #087e8b;
+            margin-bottom: 10px;
+        }
+        .card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .facility-container .card {
+            background-color: #e1f5f7;
+        }
+
+        .hours {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            max-width: 650px;
+            margin: auto;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .hours p {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .emergency {
+            background-color: #ffe8e8;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .emergency h2 {
+            color: #d62828;
+        }
+
+        .emergency h3 {
+            color: #b00020;
+            font-size: 26px;
+            margin-top: 10px;
+        }
+
+        .appointment {
+            background-color: white;
+            max-width: 650px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .appointment label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .appointment input,
+        .appointment select,
+        .appointment textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .appointment input:focus,
+        .appointment select:focus,
+        .appointment textarea:focus {
+            outline: 2px solid #087e8b;
+        }
+
+        .appointment button {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #064c55;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 30px 5%;
+            }
+        }
