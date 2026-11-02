@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- *Name:* 
-- *Roll Number:* Kesani Deekshitha
+- *Name:* Kesani Deekshitha
+- *Roll Number:* 26001215
 - *Branch:* CSM
 - *Section:* 06
 
